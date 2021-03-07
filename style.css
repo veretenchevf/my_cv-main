@@ -251,6 +251,7 @@ figcaption {
 
 .footer {
   text-align: center;
+  margin-bottom: 100px;
 }
 .footer_firstline {
   font-size: 34px;
