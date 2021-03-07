@@ -1,0 +1,41 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 110px;
+    &_firstline {
+        padding-top: 90px;
+        margin-bottom: 70px;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    &_secondline {
+        margin-bottom: 80px;
+    }
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.card {
+    text-align: center;
+    &_icon {
+        height: 90px;
+        margin-bottom: 24px;
+        &-html {
+            height: 104px;
+            margin-bottom: 19px;
+            margin-top: -9px;
+        }
+    }   
+    
+    &_name{
+        margin-bottom: 20px;
+        font-style: 14px;
+        line-height: 17px;
+    }
+}
+ 

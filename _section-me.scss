@@ -1,0 +1,24 @@
+.me {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.name {
+    font-size: 47px;
+    line-height: 58px;
+    font-weight: bold;
+    width: 300px;
+    margin-right: 50px;
+}
+.occup {
+    align-self: flex-end;
+    width: 195px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.lang {
+    transform: rotate(-90deg);
+    padding-top: 84px;
+}

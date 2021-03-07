@@ -1,0 +1,63 @@
+.footer {
+    text-align: center;
+    &_firstline {
+        font-size: 34px;
+        font-weight: bold;
+        padding-top: 104px;
+        margin-bottom: 20px;
+    }
+    &_secondline {
+        margin-bottom: 7px;
+    }
+    &_thirdline {
+        margin-bottom: 40px;
+    }
+    &_mailme {
+        height: 35px;
+        width: 115px;
+        background-color: black;
+        border-radius: 15px;
+        padding-top: 7px;
+        &:hover {
+            color: white;
+        }
+        margin: 0 5px 40px 5px;
+    }
+    &_find_me{
+        margin-bottom: 15px;
+    }
+}
+.getintouch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icons {
+    height: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+    color: black;
+    &:hover {
+        color: darkgray;
+    }
+    &-hh {
+        font-size: 33px;
+        height: 50px;
+        width: 50px;
+        padding-top: 8px;
+        padding-left: 2px;
+        color:white;
+        background-color: black;
+        border-radius: 100%;
+        &:hover {
+            background-color: darkgray;
+            color: white
+        }
+    }
+}
+.icon_tab {
+    display: flex;
+    justify-content: center;
+}
+

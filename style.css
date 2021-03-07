@@ -1,0 +1,318 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+  font-style: 18px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Bold.eot");
+  src: local("fonts/Gilroy Bold"), local("fonts/Gilroy-Bold"), url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Bold.woff2") format("woff2"), url("fonts/Gilroy-Bold.woff") format("woff"), url("fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Medium.eot");
+  src: local("fonts/Gilroy Medium"), local("fonts/Gilroy-Medium"), url("fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Medium.woff2") format("woff2"), url("fonts/Gilroy-Medium.woff") format("woff"), url("fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.header {
+  max-width: 60%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  list-style: none;
+  margin: 32px 0 32px 0;
+  border-bottom: 2px solid #070707;
+  padding-bottom: 32px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #828282;
+}
+.link:hover {
+  color: #070707;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .me {
+    padding-top: 65px;
+  }
+}
+.me {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.name {
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: bold;
+  width: 300px;
+  margin-right: 50px;
+}
+
+.occup {
+  align-self: flex-end;
+  width: 195px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.lang {
+  transform: rotate(-90deg);
+  padding-top: 84px;
+}
+
+.myphoto {
+  margin: 40px auto 80px auto;
+  max-width: 60%;
+}
+
+.sec_about_me {
+  background-color: #F6F6F6;
+}
+
+.about_me {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto 8px auto;
+  padding: 120px 15px 0 15px;
+  text-align: center;
+}
+.about_me_title {
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.about_me_firstline {
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.about_me_secondline {
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.about_me_thirdline {
+  line-height: 22px;
+  margin-bottom: 107px;
+}
+
+.hillel_link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.hillel_link:hover {
+  color: #0b98bb;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 110px;
+}
+.skills_firstline {
+  padding-top: 90px;
+  margin-bottom: 70px;
+  font-weight: bold;
+  font-size: 34px;
+}
+.skills_secondline {
+  margin-bottom: 80px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  text-align: center;
+}
+.card_icon {
+  height: 90px;
+  margin-bottom: 24px;
+}
+.card_icon-html {
+  height: 104px;
+  margin-bottom: 19px;
+  margin-top: -9px;
+}
+.card_name {
+  margin-bottom: 20px;
+  font-style: 14px;
+  line-height: 17px;
+}
+
+.portfolio {
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 10px;
+}
+.portfolio:last-child {
+  margin-bottom: 0px;
+}
+
+.portfolio_firstline {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-bottom: 47px;
+}
+
+figcaption {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 99px;
+}
+
+.pic_fig {
+  width: 1144px;
+}
+
+.footer {
+  text-align: center;
+}
+.footer_firstline {
+  font-size: 34px;
+  font-weight: bold;
+  padding-top: 104px;
+  margin-bottom: 20px;
+}
+.footer_secondline {
+  margin-bottom: 7px;
+}
+.footer_thirdline {
+  margin-bottom: 40px;
+}
+.footer_mailme {
+  height: 35px;
+  width: 115px;
+  background-color: black;
+  border-radius: 15px;
+  padding-top: 7px;
+  margin: 0 5px 40px 5px;
+}
+.footer_mailme:hover {
+  color: white;
+}
+.footer_find_me {
+  margin-bottom: 15px;
+}
+
+.getintouch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons {
+  height: 50px;
+  font-size: 50px;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  color: black;
+}
+.icons:hover {
+  color: darkgray;
+}
+.icons-hh {
+  font-size: 33px;
+  height: 50px;
+  width: 50px;
+  padding-top: 8px;
+  padding-left: 2px;
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+}
+.icons-hh:hover {
+  background-color: darkgray;
+  color: white;
+}
+
+.icon_tab {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

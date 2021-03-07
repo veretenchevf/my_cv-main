@@ -1,0 +1,24 @@
+.portfolio {
+    margin: 0px auto 0px auto;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 10px; 
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.portfolio_firstline {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 42px;
+    padding-bottom: 47px;
+}
+figcaption {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 99px;
+}
+.pic_fig {
+    width: 1144px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <title>VereFedor</title>
+</head>
+<body>
+    <header class="header">
+            <nav class="nav">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#about Me" class="link">About Me</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#portfolio" class="link">Portfolio</a></li>
+                <li><a href="#contacts" class="link">Contacts</a></li>
+            </nav>
+    </header>
+    <section class="me">
+        <div class="name">Veretenchev Fedor</div>
+        <div class="occup">Junior Front-End-Dev <br> 30 yo, Samara</div>
+        <div class="lang">lang|switch</div>
+    </section>
+    <section class="fotorama myphoto" data-width="100%" data-trackpad="true" data-fit="cover" data-nav="false" data-arrows="false">
+        <img src="pics/me-3.jpg" alt="me-3">
+        <img src="pics/me.jpg" alt="me">
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <section class="sec_about_me" id="about Me">
+        <div class="about_me">
+            <p class="about_me_title">About me</p>
+            <p class="about_me_firstline"> Hi, I'm Fedor – beginner front-end-developer from Samara. <br> I'm interested in web-dev and everything connected with it.</p>
+            <p class="about_me_secondline">I took the "Front-End Basic" course at the <a href="https://online.ithillel.ua/" target="_blank" class="hillel_link">Hillel IT School.</a></p>
+            <p class="about_me_thirdline">I would be happy to be a part of the wonderful and professional team.</p>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <p class="skills_firstline">Skills</p>
+        <p class="skills_secondline">I work in such programs and have such skills as</p>
+        <div class="cards">
+            <div class="card">
+                <img src="icons/vsc.png" alt="VSC+logo" class="card_icon">
+                <p class="card_name">VSCode</p>
+                <p class="card_progress">Basic</p>
+            </div>
+            <div class="card">
+                <img src="icons/git_logo.png" alt="git_logo" class="card_icon">
+                <p class="card_name">GitHub</p>
+                <p class="card_progress">Basic</p>
+            </div>
+            <div class="card">
+                <img src="icons/sass-e1561793219947.png" alt="sass_logo" class="card_icon">
+                <p class="card_name">VSCode</p>
+                <p class="card_progress">Basic</p>
+            </div>
+            <div class="card">
+                <img src="icons/html5.png" alt="html5_logo" class="card_icon card_icon-html">
+                <p class="card_name">Responsive</p>
+                <p class="card_progress">Basic</p>
+            </div>
+            <div class="card">
+                <img src="icons/js.png" alt="js_logo" class="card_icon">
+                <p class="card_name">JavaScript</p>
+                <p class="card_progress">Coming Soon</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec_about_me" id="portfolio">
+        <div class="portfolio">
+            <p class="portfolio_firstline">My portfolio</p>
+            <figure class="pre">
+                <img src="pics/pre.jpg" alt="pre" class="pic_fig">
+                <figcaption>
+                    <a href="https://veretenchevf.github.io/pre/" class="link" target="_blank">Boost your business. Non-responsive SPA</a>
+                </figcaption>
+            </figure>
+            <figure class="pre">
+                <img src="pics/finale.jpg" alt="finale" class="pic_fig">
+                <figcaption>
+                    <a href="https://veretenchevf.github.io/diplomas/" class="link" target="_blank">Surface. Responsive SPA</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer_firstline" id="contacts">Contacts</p>
+        <p class="footer_secondline">Want to know more or just chat?</p>
+        <p class="footer_thirdline">You are welcome!</p>
+        <div class="getintouch">
+            <a href="mailto:veretenchevf@gmail.com" class="link footer_mailme">Mail me</a>
+            <a href="tel:+79277566577" class="link footer_mailme">Text me</a>
+        </div>
+        <p class="footer_find_me">Find me on</p>
+        <div class="icon_tab">
+            <a href="https://github.com/veretenchevf" target="_blank" <i class="fab fa-github-square icons"></i></a>
+            <a href="https://samara.hh.ru/resume/4a40624cff024f5bd20039ed1f376431787366" target="_blank" class="icons icons-hh">hh</a>
+            <a href="https://www.linkedin.com/in/fedor-veretenchev-b3a67174/" <i class="fab fa-linkedin icons"></i></a>
+            <a href=""></a>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
