@@ -226,6 +226,7 @@ table {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 10px;
+  max-width: 1143px;
 }
 .portfolio:last-child {
   margin-bottom: 0px;
@@ -246,7 +247,7 @@ figcaption {
 }
 
 .pic_fig {
-  width: 1144px;
+  width: 100%;
 }
 
 .footer {
