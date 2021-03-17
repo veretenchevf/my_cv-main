@@ -62,3 +62,36 @@
     justify-content: center;
 }
 
+@media (max-width:1549px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+        &_firstline {
+            padding-top: 40px;
+        }
+        &_thirdline {
+            margin-bottom: 15px;
+        }
+        &_mailme {
+            height: 35px;
+            // width: 100px;
+            background-color: black;
+            border-radius: 15px;
+            padding-top: 7px;
+            &:hover {
+                color: white;
+            }
+            margin: 0 5px 10px 5px;
+        }
+        &_find_me{
+            font-size: 34px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    }
+    
+}
+

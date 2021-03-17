@@ -2,3 +2,9 @@
     margin: 40px auto 80px auto;
     max-width: 60%;
 }
+
+@media (max-width:1549px) {
+    .myphoto {
+        max-width: 90%;
+    }
+}

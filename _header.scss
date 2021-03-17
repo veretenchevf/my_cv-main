@@ -21,13 +21,48 @@
         color: #070707;
     }
 }
+.burg_menu {
+    display: none;
+    position: absolute;
+    right: 155px;
+    top: 88px;
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 33px;
+        height: 4px;
+        background-color: black;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        width: 33px;
+        height: 4px;
+        background-color: black;
+    }
+}
+
+@media (max-width:1549px) {
+    .header {
+        max-width: 90%;
+    }
+
+}
 @media (max-width:767px) {
+    .burg_menu {
+        display: block;
+    }
     .nav {
         display: none;
     }
-    .link {
-    display: none
-    }   
+    // .link {
+    //     display: none
+    // }   
     .me {
         padding-top: 65px;
     }

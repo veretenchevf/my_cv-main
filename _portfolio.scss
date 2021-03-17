@@ -23,3 +23,19 @@ figcaption {
 .pic_fig {
     width: 100%;
 }
+
+@media (max-width:1549px) {
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 10px; 
+        max-width: 90%;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    figcaption {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+}

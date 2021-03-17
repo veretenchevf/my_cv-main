@@ -1,7 +1,7 @@
 .me {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    max-width: 60%;
     margin: auto;
 }
 .name {
@@ -21,4 +21,11 @@
 .lang {
     transform: rotate(-90deg);
     padding-top: 84px;
+}
+
+@media (max-width:1549px) {
+    .me {
+        max-width: 90%;
+    }
+
 }

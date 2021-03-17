@@ -35,3 +35,13 @@
         color:rgb(11, 152, 187);
     }
 }
+
+@media (max-width:1549px) {
+    .about_me {
+    padding: 40px 15px 0px 15px;
+    margin-bottom: 0;
+    &_thirdline {
+        margin-bottom: 40px;
+    }
+}   
+}

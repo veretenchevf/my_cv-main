@@ -94,12 +94,43 @@ table {
   color: #070707;
 }
 
+.burg_menu {
+  display: none;
+  position: absolute;
+  right: 155px;
+  top: 88px;
+  width: 33px;
+  height: 4px;
+  background-color: black;
+}
+.burg_menu::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 33px;
+  height: 4px;
+  background-color: black;
+}
+.burg_menu::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 33px;
+  height: 4px;
+  background-color: black;
+}
+
+@media (max-width: 1549px) {
+  .header {
+    max-width: 90%;
+  }
+}
 @media (max-width: 767px) {
-  .nav {
-    display: none;
+  .burg_menu {
+    display: block;
   }
 
-  .link {
+  .nav {
     display: none;
   }
 
@@ -110,7 +141,7 @@ table {
 .me {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -134,11 +165,21 @@ table {
   padding-top: 84px;
 }
 
+@media (max-width: 1549px) {
+  .me {
+    max-width: 90%;
+  }
+}
 .myphoto {
   margin: 40px auto 80px auto;
   max-width: 60%;
 }
 
+@media (max-width: 1549px) {
+  .myphoto {
+    max-width: 90%;
+  }
+}
 .sec_about_me {
   background-color: #F6F6F6;
 }
@@ -179,6 +220,15 @@ table {
   color: #0b98bb;
 }
 
+@media (max-width: 1549px) {
+  .about_me {
+    padding: 40px 15px 0px 15px;
+    margin-bottom: 0;
+  }
+  .about_me_thirdline {
+    margin-bottom: 40px;
+  }
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -221,6 +271,22 @@ table {
   line-height: 17px;
 }
 
+@media (max-width: 1549px) {
+  .skills {
+    margin-bottom: 40px;
+  }
+  .skills_firstline {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  .skills_secondline {
+    margin-bottom: 40px;
+  }
+
+  .card_name {
+    margin-bottom: 7px;
+  }
+}
 .portfolio {
   margin: 0px auto 0px auto;
   text-align: center;
@@ -250,6 +316,21 @@ figcaption {
   width: 100%;
 }
 
+@media (max-width: 1549px) {
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    max-width: 90%;
+  }
+  .portfolio:last-child {
+    margin-bottom: 0px;
+  }
+
+  figcaption {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
 .footer {
   text-align: center;
   margin-bottom: 100px;
@@ -315,6 +396,37 @@ figcaption {
 .icon_tab {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1549px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .footer_firstline {
+    padding-top: 40px;
+  }
+  .footer_thirdline {
+    margin-bottom: 15px;
+  }
+  .footer_mailme {
+    height: 35px;
+    background-color: black;
+    border-radius: 15px;
+    padding-top: 7px;
+    margin: 0 5px 10px 5px;
+  }
+  .footer_mailme:hover {
+    color: white;
+  }
+  .footer_find_me {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
