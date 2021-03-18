@@ -13,6 +13,8 @@
     }
     &_secondline {
         margin-bottom: 80px;
+        text-align: center;
+        line-height: 20px;
     }
 }
 .cards {
@@ -54,5 +56,24 @@
         &_name{
             margin-bottom: 7px;
         }
+    }
+}
+@media (max-width:767px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .card {
+        text-align: center;
+        &_icon {
+            height: 90px;
+            margin-bottom: 15px;
+        }   
+        
+        &_name{
+            margin-bottom: 7px;
+        }
+        margin-bottom: 25px;
     }
 }

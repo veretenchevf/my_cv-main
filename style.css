@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,30 +95,12 @@ table {
   color: #070707;
 }
 
-.burg_menu {
+#menu__toggle {
   display: none;
-  position: absolute;
-  right: 155px;
-  top: 88px;
-  width: 33px;
-  height: 4px;
-  background-color: black;
 }
-.burg_menu::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  width: 33px;
-  height: 4px;
-  background-color: black;
-}
-.burg_menu::after {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 33px;
-  height: 4px;
-  background-color: black;
+
+.menu__btn {
+  display: none;
 }
 
 @media (max-width: 1549px) {
@@ -126,16 +109,102 @@ table {
   }
 }
 @media (max-width: 767px) {
-  .burg_menu {
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
     display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #616161;
   }
 
-  .nav {
-    display: none;
+  .menu__btn > span::before {
+    content: "";
+    top: -7px;
   }
 
-  .me {
-    padding-top: 65px;
+  .menu__btn > span::after {
+    content: "";
+    top: 7px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 375px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .menu__item {
+    display: block;
+    padding: 33px 24px;
+    color: #333;
+  }
+
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+
+  .menu__item {
+    transition-duration: 0.25s;
   }
 }
 .me {
@@ -170,6 +239,23 @@ table {
     max-width: 90%;
   }
 }
+@media (max-width: 767px) {
+  .me {
+    flex-direction: column;
+  }
+
+  .occup {
+    align-self: flex-start;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .name {
+    margin-bottom: 20px;
+  }
+}
 .myphoto {
   margin: 40px auto 80px auto;
   max-width: 60%;
@@ -178,6 +264,11 @@ table {
 @media (max-width: 1549px) {
   .myphoto {
     max-width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .myphoto {
+    margin: 20px auto 60px auto;
   }
 }
 .sec_about_me {
@@ -245,6 +336,8 @@ table {
 }
 .skills_secondline {
   margin-bottom: 80px;
+  text-align: center;
+  line-height: 20px;
 }
 
 .cards {
@@ -283,6 +376,25 @@ table {
     margin-bottom: 40px;
   }
 
+  .card_name {
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .card_icon {
+    height: 90px;
+    margin-bottom: 15px;
+  }
   .card_name {
     margin-bottom: 7px;
   }
@@ -354,11 +466,16 @@ figcaption {
   border-radius: 15px;
   padding-top: 7px;
   margin: 0 5px 40px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #828282;
 }
 .footer_mailme:hover {
   color: white;
 }
 .footer_find_me {
+  font-size: 34px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
@@ -426,6 +543,14 @@ figcaption {
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 

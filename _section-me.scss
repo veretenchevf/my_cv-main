@@ -27,5 +27,19 @@
     .me {
         max-width: 90%;
     }
+}
+@media (max-width:767px) {
+    .me {
+        flex-direction: column;
+    }  
+    .occup {
+        align-self: flex-start;
+    }
+    .lang {
+        display: none;
+    }
 
+    .name {
+        margin-bottom: 20px;
+    }
 }
