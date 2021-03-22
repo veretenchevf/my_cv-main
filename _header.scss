@@ -28,7 +28,6 @@
     display: none;
 }
 
-
 @media (max-width:1549px) {
     .header {
         max-width: 90%;
@@ -40,8 +39,8 @@
         opacity: 0;
     }
     .menu__btn {
-        display: flex; /* используем flex для центрирования содержимого */
-        align-items: center;  /* центрируем содержимое кнопки */
+        display: flex; 
+        align-items: center; 
         position: fixed;
         top: 20px;
         right: 25px;
@@ -87,7 +86,6 @@
         display: block;
         padding: 33px 24px;
         color: #333; 
-        
     }
     .menu__item:hover {
         background-color: #CFD8DC;

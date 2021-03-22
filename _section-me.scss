@@ -1,4 +1,4 @@
-.me {
+.mee {
     display: flex;
     justify-content: space-between;
     max-width: 60%;
@@ -17,19 +17,19 @@
     font-size: 18px;
     line-height: 21px;
 }
-
 .lang {
     transform: rotate(-90deg);
     padding-top: 84px;
 }
 
 @media (max-width:1549px) {
-    .me {
+    .mee {
         max-width: 90%;
     }
 }
+
 @media (max-width:767px) {
-    .me {
+    .mee {
         flex-direction: column;
     }  
     .occup {
@@ -38,7 +38,6 @@
     .lang {
         display: none;
     }
-
     .name {
         margin-bottom: 20px;
     }
