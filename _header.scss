@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     max-width: 60%;
     margin: auto;
@@ -101,10 +105,7 @@
         top: 0;
         transform: rotate(90deg);
     }
-    #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-    }
+
     .menu__btn > span,
     .menu__btn > span::before,
     .menu__btn > span::after {
@@ -116,4 +117,9 @@
     .menu__item {
         transition-duration: .25s;
     }
+    .active__menu{
+        visibility: visible;
+        left: 0;
+    }
 }
+

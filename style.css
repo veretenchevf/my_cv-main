@@ -68,6 +68,10 @@ table {
   font-weight: 500;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   max-width: 60%;
   margin: auto;
@@ -185,11 +189,6 @@ table {
     transform: rotate(90deg);
   }
 
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-
   .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -202,6 +201,11 @@ table {
 
   .menu__item {
     transition-duration: 0.25s;
+  }
+
+  .active__menu {
+    visibility: visible;
+    left: 0;
   }
 }
 .mee {
@@ -305,7 +309,7 @@ table {
   font-weight: bold;
 }
 .hillel_link:hover {
-  color: #0b98bb;
+  color: rgb(11, 152, 187);
 }
 
 @media (max-width: 1549px) {
@@ -339,7 +343,7 @@ table {
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
 }
 
@@ -359,6 +363,11 @@ table {
   margin-bottom: 20px;
   font-style: 14px;
   line-height: 17px;
+}
+
+img.card_icon:hover {
+  transition: 0.7s ease-in-out;
+  transform: rotate(1turn);
 }
 
 @media (max-width: 1549px) {
