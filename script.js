@@ -6,5 +6,5 @@ BURGER.addEventListener('click', () => {
 })
 
 MENU_BOX.addEventListener('click', () => {
-    MENU_BOX.classList.toggle('active__menu')
+    BURGER.click()
 })

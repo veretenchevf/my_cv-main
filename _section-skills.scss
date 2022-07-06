@@ -79,4 +79,12 @@ img.card_icon:hover{
         }
         margin-bottom: 25px;
     }
+    .cards {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 29px;
+        align-content: center;
+    }
 }
